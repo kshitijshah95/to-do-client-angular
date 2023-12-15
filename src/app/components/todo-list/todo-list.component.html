@@ -1,0 +1,8 @@
+<div class="list">
+  <div class="header">{{ list.list_name }}</div>
+  <div class="list-items">
+    @for (item of list.tasks; track item.task_id){
+    <app-todo-item [item]="item" />
+    }
+  </div>
+</div>

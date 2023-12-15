@@ -1,0 +1,8 @@
+<div class="board">
+  <!-- App Content Body -->
+  <div class="lists">
+    @for (list of lists; track list.list_id){
+    <app-todo-list [list]="list" />
+    }
+  </div>
+</div>
